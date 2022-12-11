@@ -14,6 +14,4 @@ export const tema = {
   subtitulo: "#403938",
   text: "#57504D",
   cinza4: " #8D8686",
-  
- 
 };
