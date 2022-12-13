@@ -4,6 +4,7 @@ import { GlobalStyles } from "./GlobalStyles";
 import Home from "./pages/home";
 import DeliveryOrder from "./pages/deliveryOrder";
 import OrderConfirmed from "./pages/OrderConfirmed";
+import Admin from "./pages/Admin";
 import { theme } from "./theme/theme";
 import Header from "./components/header";
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/deliveryOrder" element={<DeliveryOrder />} />
         <Route path="/OrderConfirmed" element={<OrderConfirmed />} />
+        <Route path="/Admin" element={<Admin />} />
       </Routes>
     </ThemeProvider>
   );

@@ -6,7 +6,7 @@ import {
   Caption,
   Title,
   Set,
-  Coffee,
+  /*Coffee,*/
   Container,
   Title2,
 } from "./styled";
@@ -17,7 +17,7 @@ import { GiCardboardBoxClosed, GiCoffeeCup } from "react-icons/gi";
 export default function About() {
   return (
     <Container>
-      <BackgroundC src={Background} alt="" />
+      <BackgroundC src={Background} alt="Background" />
       <ContainerText>
         <Set>
           <Title>Find the perfect coffee for any time of day</Title>
@@ -27,18 +27,22 @@ export default function About() {
           </Caption>
           <List>
             <Information>
-              <FaShoppingCart className="circulo1" />
-              Simple and secure purchase            </Information>
+              <FaShoppingCart className="circle1" />
+              Simple and secure purchase
+            </Information>
             <Information>
-              <GiCardboardBoxClosed className="circulo3" />
-              Packaging keeps the coffee intact            </Information>
+              <GiCardboardBoxClosed className="circle3" />
+              Packaging keeps the coffee intact
+            </Information>
             <Information>
-              <RiTimerFill className="circulo2" />
-              Fast and tracked delivery            </Information>
+              <RiTimerFill className="circle2" />
+              Fast and tracked delivery
+            </Information>
             <Information>
-              <GiCoffeeCup className="circulo4" />
-              Coffee arrives fresh to you            </Information>
-          </List>
+              <GiCoffeeCup className="circle4" />
+              Coffee arrives fresh to you
+            </Information>
+          </List> 
         </Set>
       </ContainerText>
       <Title2>Our cafes</Title2>

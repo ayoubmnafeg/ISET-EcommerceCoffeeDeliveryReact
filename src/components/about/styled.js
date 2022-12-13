@@ -9,7 +9,7 @@ export const ContainerText = styled.div`
     text-align: center;
   }
 
-  .circulo4 {
+  .circle4 {
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -19,7 +19,7 @@ export const ContainerText = styled.div`
     color: ${(props) => props.theme.body};
   }
 
-  .circulo1 {
+  .circle1 {
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -29,7 +29,7 @@ export const ContainerText = styled.div`
     color: ${(props) => props.theme.body};
   }
 
-  .circulo2 {
+  .circle2 {
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -39,7 +39,7 @@ export const ContainerText = styled.div`
     color: ${(props) => props.theme.body};
   }
 
-  .circulo3 {
+  .circle3 {
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -58,6 +58,7 @@ export const BackgroundC = styled.img`
   position: absolute;
   top: 4rem;
   left: 0;
+  width: 100%;
 `;
 
 export const Coffee = styled.img`
