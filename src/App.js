@@ -2,22 +2,21 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./GlobalStyles";
 import Home from "./pages/home";
-import EntregaPedido from "./pages/entregaPedido";
-import PedidoConfirmado from "./pages/pedidoConfirmado";
-import { tema } from "./theme/theme";
+import DeliveryOrder from "./pages/deliveryOrder";
+import OrderConfirmed from "./pages/OrderConfirmed";
+import { theme } from "./theme/theme";
 import Header from "./components/header";
 function App() {
   return (
-    <ThemeProvider theme={tema}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/entregaPedido" element={<EntregaPedido />} />
-        <Route path="/pedidoConfirmado" element={<PedidoConfirmado />} />
+        <Route path="/deliveryOrder" element={<DeliveryOrder />} />
+        <Route path="/OrderConfirmed" element={<OrderConfirmed />} />
       </Routes>
     </ThemeProvider>
   );
 }
-
 export default App;

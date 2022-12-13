@@ -1,20 +1,20 @@
 import { Container, Grid } from "./styled";
 import About from "./../../components/about";
 import Cafes from "../../components/cafes";
-import Dados from "../../dados";
+import menu from "../../menu";
 export default function Home() {
   return (
     <Container>
       <About />
       <Grid>
-        {Dados?.map((item, index) => (
+        {menu?.map((item, index) => (
           <div key={index}>
             <Cafes
               img={item.srcImg}
               tag={item.tags}
-              valor={item.price}
-              cardTitulo={item.title}
-              sobre={item.description}
+              price={item.price}
+              cardTitle={item.title}
+              about={item.description}
             />
           </div>
         ))}

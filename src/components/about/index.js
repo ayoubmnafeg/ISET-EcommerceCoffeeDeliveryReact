@@ -1,53 +1,47 @@
 import {
-  ContainerTexto,
-  Fundo,
-  Lista,
-  Informacao,
-  Subtitulo,
-  Titulo,
-  Conjunto,
+  ContainerText,
+  BackgroundC,
+  List,
+  Information,
+  Caption,
+  Title,
+  Set,
   Coffee,
   Container,
-  Titulo2,
+  Title2,
 } from "./styled";
-import coffee from "./../../assets/coffee.png";
-import fundo from "./../../assets/fundo.png";
+import Background from "./../../assets/Background.png";
 import { FaShoppingCart } from "react-icons/fa";
 import { RiTimerFill } from "react-icons/ri";
 import { GiCardboardBoxClosed, GiCoffeeCup } from "react-icons/gi";
 export default function About() {
   return (
     <Container>
-      <Fundo src={fundo} alt="" />
-      <ContainerTexto>
-        <Conjunto>
-          <Titulo>Encontre o café perfeito para qualquer hora do dia</Titulo>
-          <Subtitulo>
-            Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
-            hora
-          </Subtitulo>
-          <Lista>
-            <Informacao>
+      <BackgroundC src={Background} alt="" />
+      <ContainerText>
+        <Set>
+          <Title>Find the perfect coffee for any time of day</Title>
+          <Caption>
+            With Coffee Delivery you get your coffee wherever you are, at any time
+            hour
+          </Caption>
+          <List>
+            <Information>
               <FaShoppingCart className="circulo1" />
-              Compra simples e segura
-            </Informacao>
-            <Informacao>
+              Simple and secure purchase            </Information>
+            <Information>
               <GiCardboardBoxClosed className="circulo3" />
-              Embalagem mantém o café intacto
-            </Informacao>
-            <Informacao>
+              Packaging keeps the coffee intact            </Information>
+            <Information>
               <RiTimerFill className="circulo2" />
-              Entrega rápida e rastreada
-            </Informacao>
-            <Informacao>
-              <GiCoffeeCup className="circulo4" />O café chega fresquinho até
-              você
-            </Informacao>
-          </Lista>
-        </Conjunto>
-        <Coffee src={coffee} alt="" />
-      </ContainerTexto>
-      <Titulo2>Nossos cafés</Titulo2>
+              Fast and tracked delivery            </Information>
+            <Information>
+              <GiCoffeeCup className="circulo4" />
+              Coffee arrives fresh to you            </Information>
+          </List>
+        </Set>
+      </ContainerText>
+      <Title2>Our cafes</Title2>
     </Container>
   );
 }

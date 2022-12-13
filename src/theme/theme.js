@@ -1,4 +1,4 @@
-export const tema = {
+export const theme = {
   body: "#FAFAFA",
   card: "#F3F2F2",
   cinza5: "#E6E5E5",

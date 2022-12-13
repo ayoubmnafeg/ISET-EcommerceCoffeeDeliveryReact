@@ -1,4 +1,4 @@
-import { Container, Logo, Local, Carrinho, Conjunto, Entrega } from "./styled";
+import { Container, Logo, Local, Cart, Set, Delivery } from "./styled";
 import { FaMapMarkerAlt, FaShoppingCart } from "react-icons/fa";
 import logo from "./../../assets/logo.svg";
 import { Link } from "react-router-dom";
@@ -6,21 +6,21 @@ export default function Header() {
   return (
     <Container>
       <Link to="/">
-        <Logo src={logo} alt="pais" />
+        <Logo src={logo} alt="logo" />
       </Link>
 
-      <Conjunto>
+      <Set>
         <Local>
           <FaMapMarkerAlt />
-          <Entrega>Entrega em todo Brasil</Entrega>
+          <Delivery>Delivery all over Sfax</Delivery>
         </Local>
 
-        <Carrinho>
-          <Link to="/entregaPedido">
+        <Cart>
+          <Link to="/deliveryOrder">
             <FaShoppingCart />
           </Link>
-        </Carrinho>
-      </Conjunto>
+        </Cart>
+      </Set>
     </Container>
   );
 }

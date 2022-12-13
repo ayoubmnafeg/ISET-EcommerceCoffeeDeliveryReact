@@ -1,7 +1,7 @@
 import { QuantityInputContainer } from "./styled";
 import { Minus, Plus } from "phosphor-react";
 
-export function QuantidadeBotao({ amount, addOne, removeOne }) {
+export function QuantityButton({ amount, addOne, removeOne }) {
   const handleAddOne = () => {
     addOne();
   };
@@ -11,11 +11,11 @@ export function QuantidadeBotao({ amount, addOne, removeOne }) {
   };
   return (
     <QuantityInputContainer>
-      <button onClick={handleRemoveOne} title="Remover 1">
+      <button onClick={handleRemoveOne} title="To remove 1">
         <Minus />
       </button>
       <span>{amount}</span>
-      <button onClick={handleAddOne} title="Adicionar 1">
+      <button onClick={handleAddOne} title="Add 1">
         <Plus />
       </button>
     </QuantityInputContainer>

@@ -16,7 +16,7 @@ export const Coffee = styled.img`
   top: -1.4rem;
 `;
 
-export const TituloCard = styled.h3`
+export const TitleCard = styled.h3`
   text-align: center;
   margin-bottom: 1rem;
 `;
@@ -37,22 +37,22 @@ export const Tag = styled.div`
   }
 `;
 
-export const Sobre = styled.text`
+export const About = styled.text`
   text-align: center;
   color: ${(props) => props.theme.cinza4};
 `;
 
-export const Valor = styled.h1`
+export const Value = styled.h1`
   color: ${(props) => props.theme.text};
 `;
 
-export const Pag = styled.div`
+export const Pay = styled.div`
   margin: 1.3rem;
   display: grid;
   grid-template-columns: 95px 80px 80px;
 `;
 
-export const Comprar = styled.button`
+export const Purchase = styled.button`
   margin-left: 1rem;
   width: 2.6rem;
   color: ${(props) => props.theme.body};

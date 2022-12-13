@@ -25,7 +25,7 @@ export const CartEmptyMessage = styled.div`
   text-align: center;
 `;
 
-export const Titulo = styled.h3`
+export const Title = styled.h3`
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -57,7 +57,7 @@ export const CoffeesList = styled.div`
   align-items: center;
 `;
 
-export const Carrinho = styled.button`
+export const Cart = styled.button`
   width: 90%;
   margin: 1rem;
   align-items: center;
@@ -65,7 +65,7 @@ export const Carrinho = styled.button`
   background: ${(props) => props.theme.laranja2};
 `;
 
-export const Entrega = styled.h4``;
+export const Delivery = styled.h4``;
 
 export const Card = styled.div`
   border-radius: 8px 50px 8px 50px;

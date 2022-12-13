@@ -1,19 +1,19 @@
 import {
   Container,
   Card,
-  TituloCard,
+  TitleCard,
   Tag,
-  Sobre,
-  Valor,
-  Comprar,
-  Pag,
+  About,
+  Value,
+  Purchase,
+  Pay,
   Coffee,
 } from "./styled";
 
 import { FaShoppingCart } from "react-icons/fa";
-import { QuantidadeBotao } from "../quantidadeBotao";
+import { QuantityButton } from "../quantityButton";
 import { useState } from "react";
-export default function Cafes({ img, tag, cardTitulo, sobre, valor}) {
+export default function Cafes({ img, tag, price, cardTitle, about}) {
   const [coffeeAmount, setCoffeeAmount] = useState(0);
   const isCoffeeSelected = coffeeAmount > 0;
   const buttonAddToCartIsDisabled = !isCoffeeSelected;
@@ -36,30 +36,29 @@ export default function Cafes({ img, tag, cardTitulo, sobre, valor}) {
   return (
     <Container>
       <Card>
-        <Coffee src={img} alt="pais" />
+        <Coffee src={img} alt="country" />
         <Tag>{tag && tag.map((tag) => <h6 key={tag}>{tag}</h6>)}</Tag>
-        <TituloCard>{cardTitulo}</TituloCard>
-        <Sobre>{sobre}</Sobre>
-        <Pag>
-          <Valor>R${valor}</Valor>
-          <QuantidadeBotao 
-             amount={coffeeAmount}
-             addOne={addOne}
-             removeOne={removeOne}
+        <TitleCard >{cardTitle}</TitleCard>
+        <About>{about}</About>
+        <Pay>
+          <Value>{price}TND</Value>
+          <QuantityButton 
+            amount={coffeeAmount}
+            addOne={addOne}
+            removeOne={removeOne}
           />
-          <Comprar 
+          <Purchase 
           onClick={handleAddToCart}
           disabled={buttonAddToCartIsDisabled}
           title={
             buttonAddToCartIsDisabled
-              ? 'Selecione uma quantidade para adicionar ao carrinho'
-              : 'Adicionar ao carrinho'
+              ? 'Select quantity to add to cart'
+              : 'Add to cart'
           }
           >
-           
             <FaShoppingCart />
-          </Comprar>
-        </Pag>
+          </Purchase>
+        </Pay>
       </Card>
     </Container>
   );

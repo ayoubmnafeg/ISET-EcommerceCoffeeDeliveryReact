@@ -14,13 +14,13 @@ export const Container = styled.div`
   }
 `;
 
-export const Conjunto = styled.div``;
+export const Set = styled.div``;
 
 export const Logo = styled.img`
   margin-right: 3rem;
 `;
 
-export const Entrega = styled.text`
+export const Delivery = styled.text`
   margin-left: 0.5rem;
 `;
 
@@ -30,7 +30,7 @@ export const Local = styled.button`
   background: ${(props) => props.theme.lilas3};
 `;
 
-export const Carrinho = styled.button`
+export const Cart = styled.button`
   color: ${(props) => props.theme.laranja1};
   background: ${(props) => props.theme.laranja3};
 `;

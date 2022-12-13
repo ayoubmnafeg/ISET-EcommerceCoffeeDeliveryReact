@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerTexto = styled.div`
+export const ContainerText = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -44,13 +44,13 @@ export const ContainerTexto = styled.div`
 export const Container = styled.div`
   margin: 2rem;
   span{
-    color: ${(props) => props.theme.titulo};
+    color: ${(props) => props.theme.Title};
     font-weight:bold;
     margin-left:10px;
   }
 `;
 
-export const Lista = styled.div`
+export const List = styled.div`
   border: 1px solid #8047f8;
   border-radius: 8px 50px 8px 50px;
   display: grid;
@@ -60,12 +60,12 @@ export const Lista = styled.div`
   }
 `;
 
-export const Conjunto = styled.div`
+export const Set = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const Titulo = styled.h1`
+export const Title = styled.h1`
   width: 25rem;
   @media (max-width: 800px) {
     width: 100%;
@@ -76,12 +76,12 @@ export const Informacao = styled.text`
   margin-bottom: 1rem;
 `;
 
-export const Subtitulo = styled.text`
+export const Caption = styled.text`
   width: 33rem;
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
   margin-top: 1rem;
-  color: ${(props) => props.theme.subtitulo};
+  color: ${(props) => props.theme.Caption};
   @media (max-width: 800px) {
     width: 100%;
   }

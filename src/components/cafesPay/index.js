@@ -1,9 +1,9 @@
-import { QuantidadeBotao } from "../quantidadeBotao";
+import { QuantityButton } from "../quantityButton";
 import { Remover, CoffeeSale, CoffeeInfo, Container2 } from "./styled";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { useState } from "react";
 
-export default function CafesPag({ item }) {
+export default function CafesPay({ item }) {
   const [coffeeAmount, setCoffeeAmount] = useState(0);
   const addOne = () => {
     if (coffeeAmount < 9) {
@@ -22,13 +22,13 @@ export default function CafesPag({ item }) {
       <div>
         <CoffeeInfo>
           <span>{item.title}</span>
-          <span>R${item.price}</span>
+          <span>{item.price}TND</span>
         </CoffeeInfo>
         <CoffeeSale>
-          <QuantidadeBotao
-            amount={coffeeAmount}
-            addOne={addOne}
-            removeOne={removeOne}
+          <QuantityButton
+              amount={coffeeAmount}
+              addOne={addOne}
+              removeOne={removeOne}
           />
           <Remover>
             <FaRegTrashAlt

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerTexto = styled.div`
+export const ContainerText = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -54,7 +54,7 @@ export const Container = styled.div`
   margin: 1rem;
 `;
 
-export const Fundo = styled.img`
+export const BackgroundC = styled.img`
   position: absolute;
   top: 4rem;
   left: 0;
@@ -69,7 +69,7 @@ export const Coffee = styled.img`
   }
 `;
 
-export const Lista = styled.div`
+export const List = styled.div`
   display: grid;
   grid-template-columns: 290px 290px;
   @media (max-width: 800px) {
@@ -77,34 +77,34 @@ export const Lista = styled.div`
   }
 `;
 
-export const Conjunto = styled.div`
+export const Set = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const Titulo = styled.h1`
+export const Title = styled.h1`
   width: 25rem;
   @media (max-width: 800px) {
     width: 100%;
   }
 `;
 
-export const Informacao = styled.text`
+export const Information = styled.text`
   margin-bottom: 1rem;
 `;
 
-export const Subtitulo = styled.text`
+export const Caption = styled.text`
   width: 33rem;
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
   margin-top: 1rem;
-  color: ${(props) => props.theme.subtitulo};
+  color: ${(props) => props.theme.Caption};
   @media (max-width: 800px) {
     width: 100%;
   }
 `;
 
-export const Titulo2 = styled.h1`
+export const Title2 = styled.h1`
   margin-top: 6rem;
   display: flex;
   justify-content: center;
